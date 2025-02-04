@@ -4,6 +4,7 @@ import React, { useState, useRef } from 'react';
 import SummaryButton from './components/SummaryButton';
 import TodoButton from '@/components/TodoButton';
 import WordListManager from './components/WordListManager';
+import Header from './components/Header';
 import '@/styles/main.css';
 
 declare global {
@@ -63,11 +64,11 @@ const HomePage = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>会議録音 & 文字起こしアプリ</h1>
+    <div style={{ textAlign: 'center'}}>
+      <Header />
       <button className='record-button' onClick={handleRecordClick}>{isRecording ? '録音停止' : '録音開始'}</button>
 
-      <p>{transcript}</p>
+      <p className='record-text'>{transcript}</p>
 
       {/* 単語リスト管理コンポーネント */}
       <WordListManager onUpdate={setWordList} />
