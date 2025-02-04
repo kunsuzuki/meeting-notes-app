@@ -32,14 +32,14 @@ const Header: React.FC = () => {
             <CloseIcon />
           </IconButton>
           <Typography variant="h6" sx={{ marginBottom: 2 }}>メニュー</Typography>
-          <List>
-            <ListItem component={Link} href="/">
+          <List className='menu-list'>
+            <ListItem component={Link} href="/" sx={{border: '1px solid #252525', borderRadius: '8px' }}>
               <ListItemText primary="🏠 Home" sx={{color: '#252525'}} />
             </ListItem>
-            <ListItem component={Link} href="/how-to-use">
+            <ListItem component={Link} href="/how-to-use" sx={{border: '1px solid #252525', borderRadius: '8px'}}>
               <ListItemText primary="📖 How to Use" sx={{color: '#252525'}} />
             </ListItem>
-            <ListItem component={Link} href="/privacy-policy">
+            <ListItem component={Link} href="/privacy-policy" sx={{border: '1px solid #252525', borderRadius: '8px'}}>
               <ListItemText primary="🔒 Privacy Policy" sx={{color: '#252525'}} />
             </ListItem>
           </List>
