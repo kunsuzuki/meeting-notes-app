@@ -35,6 +35,7 @@ const Header: React.FC = () => {
         disableDiscovery={false} // 🔥 少しスワイプするだけで開閉を可能に
       >
         <Box 
+            className='menu-drawer'
             sx={{ width: '80vw', padding: 2,height: "100vh" }}
         >
           {/* ❌ バツボタンで閉じる */}
