@@ -7,16 +7,20 @@ li {
     list-style: none;
 }
 
-/* スマホデザイン (768px以下の場合) */
-@media (max-width: 768px) {
+/* PCデザイン (768px以下の場合) */
+@media (min-width: 768px) {
     body {
         padding: 0 8px;
     }
     .menu-drawer {
-        width: 100%;
+        width: 250px;
     }
-    .css-1160xiw-MuiPaper-root-MuiDrawer-paper {
-        width: 80%;
+}
+
+/* スマホデザイン (768px以下の場合) */
+@media (max-width: 768px) {
+    body {
+        padding: 0 8px;
     }
 }
 
@@ -89,6 +93,9 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+}
+.h1 {
+    font-weight: bold;
 }
 
 .logo {
@@ -167,4 +174,15 @@ margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.menu-list-item {
+    cursor: pointer;
+    border: 1px solid #252525;
+    border-radius: 8px;
+    border-bottom: 5px solid #252525;
+}
+.menu-list-item:hover {
+    margin-top: 3px;
+    border-bottom: 2px solid #252525;
+    transition:all 0.3s ease-in-out;
 }

@@ -12,11 +12,11 @@ const Header: React.FC = () => {
   return (
     <>
       {/* ✅ ヘッダー */}
-      <AppBar position="static" color="primary" sx={{ boxShadow: 'unset' }}>
+      <AppBar position="static" color="primary" sx={{ boxShadow: 'unset', marginBottom: '20px' }}>
         <Toolbar>
-          <Typography variant="h6" sx={{ flexGrow: 1 }}>
+          <Typography variant="h1" sx={{ flexGrow: 1, fontSize: '32px',fontWeight: 'bold' }}>
             <Link href="/" style={{ textDecoration: 'none', color: '#252525' }}>
-              会議録音 & 文字起こしアプリ
+              カイロク
             </Link>
           </Typography>
           <IconButton onClick={() => setIsOpen(true)} color="inherit">
@@ -35,22 +35,21 @@ const Header: React.FC = () => {
         disableDiscovery={false} // 🔥 少しスワイプするだけで開閉を可能に
       >
         <Box 
-            className='menu-drawer'
-            sx={{ width: 250, padding: 2,height: "100vh" }}
+            sx={{ width: '80vw', padding: 2,height: "100vh" }}
         >
           {/* ❌ バツボタンで閉じる */}
           <IconButton onClick={() => setIsOpen(false)} sx={{ float: 'right' }}>
             <CloseIcon />
           </IconButton>
-          <Typography variant="h6" sx={{ marginBottom: 2 }}>メニュー</Typography>
+          <Typography variant="h6" sx={{ marginBottom: 2 }}>MENU</Typography>
           <List className='menu-list'>
-            <ListItem component={Link} href="/" sx={{ border: '1px solid #252525', borderRadius: '8px' }}>
+            <ListItem component={Link} href="/" className='menu-list-item'>
               <ListItemText primary="🏠 Home" sx={{ color: '#252525' }} />
             </ListItem>
-            <ListItem component={Link} href="/how-to-use" sx={{ border: '1px solid #252525', borderRadius: '8px' }}>
+            <ListItem component={Link} href="/how-to-use" className='menu-list-item'>
               <ListItemText primary="📖 How to Use" sx={{ color: '#252525' }} />
             </ListItem>
-            <ListItem component={Link} href="/privacy-policy" sx={{ border: '1px solid #252525', borderRadius: '8px' }}>
+            <ListItem component={Link} href="/privacy-policy" className='menu-list-item'>
               <ListItemText primary="🔒 Privacy Policy" sx={{ color: '#252525' }} />
             </ListItem>
           </List>
