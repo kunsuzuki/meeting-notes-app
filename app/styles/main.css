@@ -7,6 +7,19 @@ li {
     list-style: none;
 }
 
+/* スマホデザイン (768px以下の場合) */
+@media (max-width: 768px) {
+    body {
+        padding: 0 8px;
+    }
+    .menu-drawer {
+        width: 100%;
+    }
+    .css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+        width: 80%;
+    }
+}
+
 .record-button {
     padding: 10px 20px;
     font-size: 14px;
