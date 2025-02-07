@@ -14,7 +14,7 @@ const Header: React.FC = () => {
       {/* ✅ ヘッダー */}
       <AppBar position="static" color="primary" sx={{ boxShadow: 'unset', marginBottom: '20px' }}>
         <Toolbar>
-          <Typography variant="h1" sx={{ flexGrow: 1, fontSize: '32px',fontWeight: 'bold' }}>
+          <Typography variant="h1" sx={{ flexGrow: 1, fontSize: '32px',fontWeight: 'bold', textAlign: 'left' }}>
             <Link href="/" style={{ textDecoration: 'none', color: '#252525' }}>
               カイロク
             </Link>
@@ -52,6 +52,9 @@ const Header: React.FC = () => {
             </ListItem>
             <ListItem component={Link} href="/privacy-policy" className='menu-list-item'>
               <ListItemText primary="🔒 Privacy Policy" sx={{ color: '#252525' }} />
+            </ListItem>
+            <ListItem component={Link} href="/terms-of-use" className='menu-list-item'>
+              <ListItemText primary="📋 Terms of Use" sx={{ color: '#252525' }} />
             </ListItem>
           </List>
         </Box>

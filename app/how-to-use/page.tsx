@@ -8,7 +8,7 @@ const HowToUse = () => {
     <>
     <Header />
     <div style={{ maxWidth: '800px', margin: '20px auto', padding: '20px' }}>
-      <h2>How to use</h2>
+      <h2 style={{ fontSize: '24px' }}>How to use<span style={{ fontSize: '14px' }}> - 使い方-</span></h2>
       <p>このアプリは、会議の録音・文字起こし・要約・TODO抽出を行うツールです。</p>
 
       <h3>📌 主な機能</h3>
