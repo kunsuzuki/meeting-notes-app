@@ -1,8 +1,8 @@
 import MuiThemeProvider from './components/ThemeProvider';
 
 export const metadata = {
-  title: 'meeting-notes',
-  description: 'We save you from tedious minute-taking and task management.',
+  title: 'カイロク｜会議録音要約アプリ',
+  description: 'カイロクは会議などの音声の録音、AIによる要約・TODO抽出を行うサービスです。',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
